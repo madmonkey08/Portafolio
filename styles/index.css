@@ -444,11 +444,11 @@ a {
     flex-direction: column;
     justify-content: start;
     background-color: hsl(225, 13%, 12%);
-    /* position: fixed; */
+    position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100vh;
     padding: 20px 0;
     overflow-y: auto;
 
