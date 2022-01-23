@@ -443,8 +443,8 @@ a {
   .menu {
     flex-direction: column;
     justify-content: start;
-    background-color: #1a1c22;
-    /* position: fixed; */
+    background-color: hsl(225, 13%, 12%);
+    position: fixed;
     left: 0;
     top: 50px;
     width: 100%;
