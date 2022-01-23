@@ -454,7 +454,7 @@ a {
 
     left: 100%;
     transition: left 0.3s;
-  }
+  } */
 
   .navmenu_visible {
     left: 0;
@@ -462,7 +462,7 @@ a {
 
   #menu-icon {
     display: block;
-  } */
+  }
 }
 
 @media only screen and (max-width: 1000px) {
