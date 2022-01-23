@@ -440,11 +440,11 @@ a {
     height: 50px;
   }
 
-  /* .menu {
+  .menu {
     flex-direction: column;
     justify-content: start;
     background-color: #1a1c22;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 50px;
     width: 100%;
@@ -454,7 +454,7 @@ a {
 
     left: 100%;
     transition: left 0.3s;
-  } */
+  }
 
   .navmenu_visible {
     left: 0;
