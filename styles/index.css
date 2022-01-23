@@ -1,0 +1,551 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  line-height: 1.8rem;
+  font-weight: lighter;
+}
+
+#toggle {
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#menu-icon {
+  font-size: 2rem;
+  border: none;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+body {
+  background-color: #07080d;
+  color: #ffff;
+  overflow-x: hidden;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin-right: 6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#logo {
+  margin-left: 8rem;
+  width: 10rem;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+li {
+  color: #ffff;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border-bottom-width: 0;
+  transform: all 500ms ease-in;
+}
+
+li:hover {
+  transform: all 500ms ease-out;
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-color: #d0fc1b;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-color: #d0fc1b;
+  cursor: pointer;
+}
+
+#navbar {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  background-color: transparent;
+}
+
+header {
+  background-image: url("../assets/fondoTransparente2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#header-content {
+  display: flex;
+  color: white;
+  /* margin-top: 2rem; */
+}
+
+#img-header {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #d0fc1b;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#foto {
+  width: 11rem;
+  border-radius: 50%;
+}
+
+#presentacion {
+  text-align: center;
+  margin-left: 2rem;
+}
+
+#sobre-mi {
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.section-title {
+  display: inline;
+  border-bottom-width: 3.5px;
+  border-bottom-style: solid;
+  border-color: #d0fc1b;
+  padding-bottom: 0.5rem;
+}
+
+#contenedor-title-sobremi {
+  width: 100%;
+}
+
+#mi-descripcion {
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+  /* padding-left: 4rem;
+  padding-right: 4rem; */
+  /* margin-bottom: 4rem; */
+  overflow-x: hidden;
+}
+
+#quien-soy {
+  width: 30%;
+  padding-left: 12rem;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#mis-skills {
+  width: 50%;
+}
+
+.subtitulo {
+  color: #bdbdbd;
+  display: block;
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.contenido-importante {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+p {
+  text-align: justify;
+  color: #dddada;
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  width: 9rem;
+  height: 8rem;
+  background-color: #14141ad5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.logo-skill {
+  width: 3rem;
+}
+
+.logo-skill-grande {
+  width: 3.4rem;
+}
+
+#mongodb-logo {
+  width: 4rem;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#descargarcv {
+  background-color: #d0fc1b;
+  color: #07080d;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#download-icon {
+  width: 1rem;
+  margin-right: 6px;
+}
+
+/* CONTACTO */
+
+#contacto {
+  width: 100%;
+  height: 20vh;
+  color: #ffff;
+  text-align: center;
+}
+
+#informacion {
+  width: 100%;
+  margin-top: 2rem;
+  /* display: flex; */
+}
+
+label {
+  color: #fff;
+  text-align: left;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn_enviar {
+  background-color: #d0fc1b;
+  color: #07080d;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  /* width: 40%; */
+  background-color: #12151b3f;
+  color: #fff;
+  border: 1px solid #1a1e253b;
+  /* border: none; */
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  margin-bottom: 2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+#redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+#redes > span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#mis-redes {
+  display: flex;
+}
+
+.red-social {
+  width: 2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* PROYECTOS */
+
+#proyectos {
+  width: 100%;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+#mis-proyectos {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.proyecto {
+  position: relative;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  width: 395px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.proyecto > img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.proyecto > .descripcion-proyecto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #07080de3;
+  padding-top: 1rem;
+  transition: all 500ms ease-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+
+.proyecto:hover > .descripcion-proyecto {
+  visibility: visible;
+  opacity: 1;
+}
+
+.proyecto:hover > img {
+  width: 110%;
+  height: 110%;
+}
+
+.titulo-proyecto {
+  color: #d0fc1b;
+}
+
+.texto-proyecto {
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-video {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #1a1c22;
+  color: white;
+  cursor: pointer;
+  font-size: small;
+}
+
+.descripcion-proyecto > a {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1015px) {
+  #navbar {
+    height: 50px;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: start;
+    background-color: #1a1c22;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 20px 0;
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .navmenu_visible {
+    left: 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #mi-descripcion {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  #quien-soy {
+    width: 80%;
+    padding-left: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  #mis-skills {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #presentacion {
+    margin: 0;
+  }
+
+  #quien-soy {
+    width: 80%;
+    padding-left: 4rem;
+  }
+
+  #mis-skills {
+    width: 90%;
+    padding-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #mi-descripcion {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  #quien-soy {
+    width: 80%;
+    padding-left: 2rem;
+  }
+
+  #mis-skills {
+    width: 90%;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .campo {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #mis-proyectos {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .proyecto {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  #redes {
+    width: 100%;
+  }
+}
