@@ -444,7 +444,7 @@ a {
     flex-direction: column;
     justify-content: start;
     background-color: hsl(225, 13%, 12%);
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     top: 50px;
     width: 100%;
