@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/assets/flaticon.svg">
+
     <title>Portafolio - Alvaro José Tobar</title>
 </head>
 
@@ -183,19 +185,19 @@
     <!-- <section id="contacto"> -->
     <div id="informacion">
         <h2 class="section-title">Contacto</h2>
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/a22800de8a4a552bd511b7bea6e84b9f" method="POST">
             <div class="campo">
                 <label>Nombre:</label>
-                <input type="text" placeholder="Ingresa tu nombre" />
+                <input type="text" name="name" placeholder="Ingresa tu nombre" required />
             </div>
             <div class="campo">
                 <label>Correo:</label>
-                <input type="email" placeholder="Ingresa tu correo" />
+                <input type="email" name="email" placeholder="Ingresa tu correo" required />
             </div>
             <div class="campo">
                 <label>Mensaje</label>
-                <textarea placeholder="Ingresa tu mensaje!"></textarea>
-                <button id="btn_enviar">Enviar!</button>
+                <textarea type="text" name="mensagge" placeholder="Ingresa tu mensaje!" required></textarea>
+                <button type="submit" id="btn_enviar">Enviar!</button>
             </div>
             <div id="redes">
                 <span>Sígueme en mis redes:</span>
