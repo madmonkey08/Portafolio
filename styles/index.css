@@ -436,6 +436,42 @@ a {
   display: inline-block;
 }
 
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  background-color: #1a1c22f6;
+  transition: all 500ms ease-out;
+  display: none;
+}
+
+.video-visible {
+  transition: all 500ms ease-in;
+  display: flex;
+  z-index: 40;
+}
+
+.btn-cerrarvideo {
+  background-color: #d0fc1b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.video {
+  margin-top: 2rem;
+  width: 60%;
+  height: 70%;
+}
+
 @media only screen and (max-width: 1015px) {
   #navbar {
     height: 50px;
@@ -462,6 +498,10 @@ a {
 
   #menu-icon {
     display: block;
+  }
+
+  .video-container {
+    top: 50px;
   }
 }
 
@@ -529,6 +569,11 @@ a {
 @media only screen and (max-width: 650px) {
   .campo {
     width: 80%;
+  }
+
+  .video {
+    margin-top: 6rem;
+    height: 40%;
   }
 }
 

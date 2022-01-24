@@ -26,5 +26,19 @@ for (let i = 0; i < menu_item.length; i++) {
     });
 }
 
+const btnSTvideo = document.getElementById("stmasters-video");
+const btnCerrarST = document.getElementById("btn-cerrarst");
+const stvideo = document.getElementById("stvideo");
+
+btnSTvideo.addEventListener("click", () => {
+    stvideo.classList.toggle("video-visible");
+});
+
+btnCerrarST.addEventListener("click", () => {
+    stvideo.classList.remove("video-visible");
+});
+
+
+
 
 
