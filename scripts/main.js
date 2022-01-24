@@ -12,19 +12,19 @@ const typed = new Typed('.typed', {
     contentType: 'html'
 });
 
-// const menu = document.querySelector(".menu");
-// const menu_item = document.querySelectorAll(".menu-item");
-// const toggle = document.getElementById("toggle");
+const menu = document.querySelector(".menu");
+const menu_item = document.querySelectorAll(".menu-item");
+const toggle = document.getElementById("toggle");
 
-    // toggle.addEventListener("click", () => {
-    //     menu.classList.toggle("navmenu_visible");
-    // });
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("navmenu_visible");
+});
 
-    // for (let i = 0; i < menu_item.length; i++) {
-    //     menu_item[i].addEventListener("click", () => {
-    //         menu.classList.remove('navmenu_visible');
-    //     });
-    // }
+for (let i = 0; i < menu_item.length; i++) {
+    menu_item[i].addEventListener("click", () => {
+        menu.classList.remove('navmenu_visible');
+    });
+}
 
 
 
