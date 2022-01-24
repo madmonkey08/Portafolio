@@ -26,16 +26,29 @@ for (let i = 0; i < menu_item.length; i++) {
     });
 }
 
-const btnSTvideo = document.getElementById("stmasters-video");
-const btnCerrarST = document.getElementById("btn-cerrarst");
-const stvideo = document.getElementById("stvideo");
+const btnvideo = document.querySelectorAll(".btn-video");
+const btnCerrarVideo = document.getElementById("btn-cerrar");
+const videoContainer = document.querySelector(".video-container");
+const video = document.querySelector(".video");
 
-btnSTvideo.addEventListener("click", () => {
-    stvideo.classList.toggle("video-visible");
-});
+for (let i = 0; i < btnvideo.length; i++) {
+    btnvideo[i].addEventListener("click", () => {
+        const id = btnvideo[i].getAttribute('id');
+        if (id === 'stmasters-video') {
+            video.src = "https://www.youtube.com/embed/21qNxnCS8WU";
+        } else if (id === 'cellfin-video') {
+            video.src = "https://www.youtube.com/embed/89XPBelvrZk";
+        } else if (id === 'pandapos-video') {
+            video.src = "https://www.youtube.com/embed/-5KAN9_CzSA";
+        }
 
-btnCerrarST.addEventListener("click", () => {
-    stvideo.classList.remove("video-visible");
+        videoContainer.classList.toggle("video-visible");
+    });
+}
+
+btnCerrarVideo.addEventListener("click", () => {
+    video.src = '';
+    videoContainer.classList.remove("video-visible");
 });
 
 

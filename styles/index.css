@@ -420,7 +420,8 @@ a {
   padding-right: 2rem;
 }
 
-.btn-video {
+.btn-video,
+.btn-video-enlace {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 4px;
