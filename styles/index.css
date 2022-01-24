@@ -55,11 +55,11 @@ li {
   cursor: pointer;
   letter-spacing: 3px;
   border-bottom-width: 0;
-  transform: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 li:hover {
-  transform: all 500ms ease-out;
+  transition: border 500ms ease-out;
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
   border-color: #d0fc1b;
