@@ -35,11 +35,11 @@ for (let i = 0; i < btnvideo.length; i++) {
     btnvideo[i].addEventListener("click", () => {
         const id = btnvideo[i].getAttribute('id');
         if (id === 'stmasters-video') {
-            video.src = "https://www.youtube.com/embed/21qNxnCS8WU";
+            video.src = "https://www.youtube.com/embed/aQ4L0vWUjdY";
         } else if (id === 'cellfin-video') {
-            video.src = "https://www.youtube.com/embed/89XPBelvrZk";
+            video.src = "";
         } else if (id === 'pandapos-video') {
-            video.src = "https://www.youtube.com/embed/-5KAN9_CzSA";
+            video.src = "https://www.youtube.com/embed/Xl2Are4jiuc";
         }
 
         videoContainer.classList.toggle("video-visible");
